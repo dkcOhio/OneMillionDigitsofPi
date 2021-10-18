@@ -1,13 +1,14 @@
 1. Source
 The source came from Scientific American article
 "Ramanujan and Pi" by Jonathan M. Borwein and Peter B. Borwein
+
 [https://en.wikipedia.org/wiki/Jonathan_Borwein
 https://en.wikipedia.org/wiki/Peter_Borwein
 
 see also
 https://en.wikipedia.org/wiki/Bailey%E2%80%93Borwein%E2%80%93Plouffe_formula]
 
-pg. 112-118
+pg. 112-118, February 1988.
 where they present an iterative method based on fourth roots that converges 
 very quickly to Pi. They claim that 15 times through the loop will yield 2 billion digits.
 You may see the mathematical presentation of the calculation in the two jpgs: Alpha_Calc and Y_Calc.
