@@ -3,6 +3,11 @@ import csv
 import math
 from math import pi, log, factorial
 from decimal import Decimal, getcontext
+import time
+f1=time.perf_counter()
+
+
+
 #
 #From pg 116
 #Scientific American 
@@ -65,5 +70,6 @@ MyPi=fdiv(1,Alpha1)
 with open('D:\Python\Check\RawPi\MyPi.txt', 'w') as fp:
     writer = csv.writer(fp)
     fp.write(nstr(MyPi,n=1000001))
-    
 
+f2=time.perf_counter()
+print("Execustion time:", f2-f1)
