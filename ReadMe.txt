@@ -1,20 +1,21 @@
-1. Source
-The source came from Scientific American article
-"Ramanujan and Pi" by Jonathan M. Borwein and Peter B. Borwein
+1. General Notes
+The python code relies on the mpmath module to take care of the large number of digits. Note that I set the precision to 1,000,100 instead of just 1M. This was necessary to take care of compounding rounding errors in the last digits.
 
-[https://en.wikipedia.org/wiki/Jonathan_Borwein
+
+https://en.wikipedia.org/wiki/Jonathan_Borwein
 https://en.wikipedia.org/wiki/Peter_Borwein
 
 see also
-https://en.wikipedia.org/wiki/Bailey%E2%80%93Borwein%E2%80%93Plouffe_formula]
+https://en.wikipedia.org/wiki/Bailey%E2%80%93Borwein%E2%80%93Plouffe_formula]\
 
-pg. 112-118, February 1988.
-where they present an iterative method based on fourth roots that converges 
+2. Python Code
+A. The source came from Scientific American article
+"Ramanujan and Pi" by Jonathan M. Borwein and Peter B. Borwein
+pg. 112-118, February 1988, where they present an iterative method based on fourth roots that converges 
 very quickly to Pi. They claim that 15 times through the loop will yield 2 billion digits.
 You may see the mathematical presentation of the calculation in the two jpgs: Alpha_Calc and Y_Calc.
 
-2. Python Code
-A. The python code relies on the mpmath module to take care of the large number of digits. Note that I set the precision to 1,000,100 instead of just 1M. This was necessary to take care of compounding rounding errors in the last digits. The program takes 2 minutes and 11 seconds to calculate 1M digits on an Intel i5 at 2.9GHz.
+The program takes 2 minutes and 11 seconds to calculate 1M digits on an Intel i5 at 2.9GHz.
 The python code is 1MillionDigitsofPi.py
 
 B. A second, faster, method based on Borwein Nonic (ninth order) algorithm is presented in 1MillionDigitsofPi_Borwein.py 
